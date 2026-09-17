@@ -1,0 +1,112 @@
+{
+  "created_at_utc": "2026-07-18T13:43:44.820817+00:00",
+  "scope": "one-time locked test evaluation",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "test_stays": 21373,
+  "test_evaluated_when_lock_written": false,
+  "test_event_cache_exact": true,
+  "projected_basis_max_abs_difference": 0.0,
+  "projected_observations_exact": true,
+  "entries": [
+    {
+      "key": "static_mlp_seed1",
+      "checkpoint": "t_fedgsp\\results\\federated_static_seed1\\checkpoints\\fedavg_static_mlp_continue.pt",
+      "checkpoint_sha256": "698d53167fca05d494b0eed25480853e3626a579df8b21c7418fe295ac272a9c",
+      "validation_prediction": "t_fedgsp\\results\\federated_static_seed1\\validation_predictions\\fedavg_static_mlp_continue.npy",
+      "validation_prediction_sha256": "5a2f853553607404d9b5b14c5546c797b4b27da3de3a388641b0ede606d530d7",
+      "validation_fitted_temperature": 0.519265270934717
+    },
+    {
+      "key": "temporal_gru_seed1",
+      "checkpoint": "t_fedgsp\\results\\federated_temporal_seed1\\checkpoints\\fedavg_temporal_gru_continue.pt",
+      "checkpoint_sha256": "1af9d5d0a0b072924aa92db177777039416220c6159dc07f2037566492ef843c",
+      "validation_prediction": "t_fedgsp\\results\\federated_temporal_seed1\\validation_predictions\\fedavg_temporal_gru_continue.npy",
+      "validation_prediction_sha256": "22f52cfca2d675f4309b6e50f04a0ca3282993bca1ca2a3defb7cf4cde2bfb1d",
+      "validation_fitted_temperature": 0.47905666831351046
+    },
+    {
+      "key": "graph_gru_seed1",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed1_graph\\checkpoints\\fedavg_graph_continue.pt",
+      "checkpoint_sha256": "5f205a30494c2aa9f9b32844f92b1787f16448b57cb8dc4caeaa996af62ebbf5",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed1_graph\\validation_predictions\\fedavg_graph_continue.npy",
+      "validation_prediction_sha256": "ec2bdf0fc2053c9d271ec63c026758093e06972e0ab4c3e0d7ab521b3c131da0",
+      "validation_fitted_temperature": 0.5003694573141144
+    },
+    {
+      "key": "fulljoint_seed1",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed1_fulljoint\\checkpoints\\fedavg_tfedgsp_fulljoint_logitres.pt",
+      "checkpoint_sha256": "28efb44fa1d07c16825b005fb5344a494c7ffdc03e258ff734a012ffb4a093ec",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed1_fulljoint\\validation_predictions\\fedavg_tfedgsp_fulljoint_logitres.npy",
+      "validation_prediction_sha256": "363f145c9bccd15394556c2e3597d13381a9065ce5640b3bb7b3e408feb236bf",
+      "validation_fitted_temperature": 0.4568507283219842
+    },
+    {
+      "key": "static_mlp_seed2",
+      "checkpoint": "t_fedgsp\\results\\federated_static_seed2\\checkpoints\\fedavg_static_mlp_continue.pt",
+      "checkpoint_sha256": "eeb4def97153f54037386372738e421ebcabbd17598ce70868d78267d080a61c",
+      "validation_prediction": "t_fedgsp\\results\\federated_static_seed2\\validation_predictions\\fedavg_static_mlp_continue.npy",
+      "validation_prediction_sha256": "c974c844a297201e96a7f7bf83e60b73e1bd31ea1df49b43bb663886fc6686e4",
+      "validation_fitted_temperature": 0.5378187372702109
+    },
+    {
+      "key": "temporal_gru_seed2",
+      "checkpoint": "t_fedgsp\\results\\federated_temporal_seed2\\checkpoints\\fedavg_temporal_gru_continue.pt",
+      "checkpoint_sha256": "629e75cad5d541938bbd5ce41d080370c67db0c9c84a0930445766f7beb7d1ff",
+      "validation_prediction": "t_fedgsp\\results\\federated_temporal_seed2\\validation_predictions\\fedavg_temporal_gru_continue.npy",
+      "validation_prediction_sha256": "37c737f61ee15e843e3f2a3f932c12f3f8409ca8148c36165f138e56797abb26",
+      "validation_fitted_temperature": 0.4894360630542438
+    },
+    {
+      "key": "graph_gru_seed2",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed2_graph\\checkpoints\\fedavg_graph_continue.pt",
+      "checkpoint_sha256": "3efa20c48bfc1284cc8767eb9f93f35792d23e5f4dcf3df91d08dfe18e64d577",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed2_graph\\validation_predictions\\fedavg_graph_continue.npy",
+      "validation_prediction_sha256": "6f8cdebe44d09619c6e235e54cdb603968fbf03c9e14c891379f810dd29ea882",
+      "validation_fitted_temperature": 0.47862983679782256
+    },
+    {
+      "key": "fulljoint_seed2",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed2_fulljoint\\checkpoints\\fedavg_tfedgsp_fulljoint_logitres.pt",
+      "checkpoint_sha256": "7329836b9b4ee1bf9b75ad27b6f35129188b4afcbb7c7a668a5c9b7761d38c50",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed2_fulljoint\\validation_predictions\\fedavg_tfedgsp_fulljoint_logitres.npy",
+      "validation_prediction_sha256": "4b83988cd9fe2dd98ba48c509a3d119480afb44e7d5a8d4f62efd07dd5966cbc",
+      "validation_fitted_temperature": 0.41295451558256674
+    },
+    {
+      "key": "static_mlp_seed3",
+      "checkpoint": "t_fedgsp\\results\\federated_static_seed3\\checkpoints\\fedavg_static_mlp_continue.pt",
+      "checkpoint_sha256": "4b0f995119e21ee2e930ccb1478c85e87839635e49ffb201042f3d86190a615c",
+      "validation_prediction": "t_fedgsp\\results\\federated_static_seed3\\validation_predictions\\fedavg_static_mlp_continue.npy",
+      "validation_prediction_sha256": "959e442c89f3795c74ffa9701f0140f15ce766032613f930965e8438840b266c",
+      "validation_fitted_temperature": 0.5099439330330064
+    },
+    {
+      "key": "temporal_gru_seed3",
+      "checkpoint": "t_fedgsp\\results\\federated_temporal_seed3\\checkpoints\\fedavg_temporal_gru_continue.pt",
+      "checkpoint_sha256": "0d446c297682c0282b37cd374dfb59015dde73e7a9a218f973df6d63aba313c3",
+      "validation_prediction": "t_fedgsp\\results\\federated_temporal_seed3\\validation_predictions\\fedavg_temporal_gru_continue.npy",
+      "validation_prediction_sha256": "57bc92db6ade94132bc3f73d643a5d92f2ec43b6b8da70b8d74200024ac5eeab",
+      "validation_fitted_temperature": 0.5169916737390117
+    },
+    {
+      "key": "graph_gru_seed3",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed3_graph\\checkpoints\\fedavg_graph_continue.pt",
+      "checkpoint_sha256": "f15dfe86ea0857f41201afad569e7b8d1fc96dee0fdbb25c96dd86e7fb6aca9b",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed3_graph\\validation_predictions\\fedavg_graph_continue.npy",
+      "validation_prediction_sha256": "6f773099249f6ca21bd0b97f712deda35fcef42ca45c7af261d8b5c1a2df1aca",
+      "validation_fitted_temperature": 0.47872703142427164
+    },
+    {
+      "key": "fulljoint_seed3",
+      "checkpoint": "t_fedgsp\\results\\federated_strong_seed3_fulljoint\\checkpoints\\fedavg_tfedgsp_fulljoint_logitres.pt",
+      "checkpoint_sha256": "ac7f44e0fd09fa403802cef46ba1bdfed033009729aa9c180d29a8f793503ff5",
+      "validation_prediction": "t_fedgsp\\results\\federated_strong_seed3_fulljoint\\validation_predictions\\fedavg_tfedgsp_fulljoint_logitres.npy",
+      "validation_prediction_sha256": "7474a5ebeec2264e6e41026bad74bed7705f82042ce734f8602a8b1a5c569577",
+      "validation_fitted_temperature": 0.43170515049936736
+    }
+  ]
+}

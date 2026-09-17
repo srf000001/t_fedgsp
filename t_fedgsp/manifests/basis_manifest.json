@@ -1,0 +1,63 @@
+{
+  "generated_at_utc": "2026-07-18T10:36:52.673711+00:00",
+  "source_bin_minutes": 60,
+  "model_bin_minutes": 120,
+  "num_stays": 107306,
+  "num_bins": 12,
+  "num_concepts": 1740,
+  "num_modalities": 4,
+  "projection": {
+    "type": "Achlioptas",
+    "seed": 20260718,
+    "dimension": 64,
+    "graph_order": 2,
+    "nonzero_fraction": 0.33326149425287355
+  },
+  "basis": {
+    "path": "basis_120min_d64_k2.npy",
+    "shape": [
+      107306,
+      12,
+      3,
+      64
+    ],
+    "dtype": "float32",
+    "finite": true,
+    "file_size_bytes": 988932224
+  },
+  "observations": {
+    "path": "observations_120min.npy",
+    "shape": [
+      107306,
+      12,
+      4
+    ],
+    "finite": true,
+    "active_bins_per_stay_median": 8.0,
+    "zero_active_stays": 0
+  },
+  "train_only_rms": {
+    "shape": [
+      3,
+      64
+    ],
+    "finite": true,
+    "strictly_positive": true,
+    "train_stays": 75108
+  },
+  "checks": {
+    "aligned_rows": true,
+    "finite_basis": true,
+    "finite_observations": true,
+    "no_empty_observation_stays": true,
+    "train_only_scale": true,
+    "fixed_projection": true
+  },
+  "status": "PASS",
+  "source_hashes": {
+    "X_time_concept_counts.npz": "f4f429044a8d83ddf9f60f3461e802f425832ec3d747cd4610636a6ec258b0a2",
+    "M_time_modality_counts.npz": "e79204c2b6ecf4392beef7433c546be761723d92c27552bf78a1814a582bbdfc",
+    "concept_graph_normalized.npz": "b660a2c3f8d8c1a759073de0f94ec6b657973962fdda2abd149c8ba04bad4328",
+    "dataset_arrays.npz": "e5397d2f3e322bb23b0b77cecb0eb60e0e4df3348f02547c1b400c520d8798c4"
+  }
+}

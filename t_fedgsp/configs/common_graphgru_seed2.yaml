@@ -1,0 +1,38 @@
+data:
+  cache_root: t_fedgsp/data/temporal_v1
+  basis_root: t_fedgsp/data/model_basis_d64
+  basis_file: basis_120min_d64_k2.npy
+  observation_file: observations_120min.npy
+  rms_file: train_rms.npy
+
+method:
+  gamma: 1.0
+  dropout: 0.2
+  temporal_order: 1
+  graph_order: 2
+  rank: 4
+  gru_hidden: 42
+  residual_logit: 0.0
+  adapter_methods: []
+
+federated:
+  seed: 2
+  expected_clients: 79
+  backbone_rounds: 80
+  branch_rounds: 30
+  local_epochs: 1
+  batch_size: 1024
+  eval_batch_size: 1024
+  optimizer: adamw
+  server_optimizer: fedavg
+  initialize_weighted_label_bias: true
+  backbone_learning_rate: 0.03
+  branch_learning_rate: 0.03
+  adapter_learning_rate: 0.003
+  weight_decay: 0.0001
+  pos_weight_clip: 20.0
+  pos_weight_scope: global
+  torch_threads: 8
+
+outputs:
+  root: t_fedgsp/results/federated_confirm_seed2_backbone

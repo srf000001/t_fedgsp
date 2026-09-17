@@ -1,0 +1,40 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Credentialed or derived eICU data (never commit)
+external_data/
+t_fedgsp/data/
+results_full/
+
+# Model states and patient-level predictions (never commit)
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.pkl
+*.pickle
+*.parquet
+*.feather
+
+# Generated logs and temporary outputs
+*.log
+tmp/
+temp/
+
+# Local archives
+*.zip
+*.7z
+*.tar
+*.tar.gz

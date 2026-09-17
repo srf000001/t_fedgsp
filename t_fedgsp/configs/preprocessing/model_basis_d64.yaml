@@ -1,0 +1,17 @@
+dataset:
+  cache_root: t_fedgsp/data/temporal_v1
+  source_bin_minutes: 60
+  model_bin_minutes: 120
+  num_concepts: 1740
+  num_modalities: 4
+
+basis:
+  projection_type: achlioptas
+  projection_seed: 20260718
+  projection_dim: 64
+  graph_order: 2
+  dtype: float32
+  train_split_code: 0
+
+outputs:
+  root: t_fedgsp/data/model_basis_d64

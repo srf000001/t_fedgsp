@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "scope": "post-lock validation-only equal-byte and generic-adapter controls",
+  "test_evaluated": false,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "rows": [
+    {
+      "seed": 1,
+      "hybrid_micro_auprc": 0.04591715210905417,
+      "generic_micro_auprc": 0.04630643788857067,
+      "full_budget_micro_auprc": 0.0465887753341184,
+      "hybrid_minus_generic": -0.0003892857795164961,
+      "hybrid_minus_full_budget": -0.0006716232250642273,
+      "hybrid_best_round": 22,
+      "generic_best_round": 21,
+      "full_rounds_affordable": 8
+    },
+    {
+      "seed": 2,
+      "hybrid_micro_auprc": 0.04347475509971939,
+      "generic_micro_auprc": 0.043510880309898664,
+      "full_budget_micro_auprc": 0.0431818961612761,
+      "hybrid_minus_generic": -3.6125210179274725e-05,
+      "hybrid_minus_full_budget": 0.00029285893844328836,
+      "hybrid_best_round": 30,
+      "generic_best_round": 30,
+      "full_rounds_affordable": 8
+    },
+    {
+      "seed": 3,
+      "hybrid_micro_auprc": 0.0438701085368181,
+      "generic_micro_auprc": 0.0436052671007114,
+      "full_budget_micro_auprc": 0.0436612651988663,
+      "hybrid_minus_generic": 0.00026484143610670113,
+      "hybrid_minus_full_budget": 0.0002088433379517987,
+      "hybrid_best_round": 30,
+      "generic_best_round": 30,
+      "full_rounds_affordable": 8
+    }
+  ],
+  "aggregate": {
+    "hybrid": {
+      "mean_micro_auprc": 0.04442067191519722,
+      "sample_sd_micro_auprc": 0.0013109789521617207,
+      "trainable_parameters": 5173,
+      "communication_bytes": 98080080
+    },
+    "generic": {
+      "mean_micro_auprc": 0.04447419509972691,
+      "sample_sd_micro_auprc": 0.0015874704546927612,
+      "trainable_parameters": 5167,
+      "communication_bytes": 97966320
+    },
+    "full_model_at_hybrid_budget": {
+      "mean_micro_auprc": 0.04447731223142026,
+      "sample_sd_micro_auprc": 0.0018442223277283442,
+      "trainable_parameters": 18365,
+      "communication_bytes": 92853440,
+      "rounds": 8
+    }
+  },
+  "hybrid_minus_generic": {
+    "per_seed": [
+      -0.0003892857795164961,
+      -3.6125210179274725e-05,
+      0.00026484143610670113
+    ],
+    "mean": -5.3523184529689904e-05,
+    "positive_seeds": 1
+  },
+  "hybrid_minus_full_budget": {
+    "per_seed": [
+      -0.0006716232250642273,
+      0.00029285893844328836,
+      0.0002088433379517987
+    ],
+    "mean": -5.664031622304675e-05,
+    "positive_seeds": 2
+  },
+  "interpretation": "The hybrid time--graph adapter is not directionally superior to either the near-parameter-matched generic adapter or the full Graph-GRU at an equal final-stage byte budget. The seed-0 screening advantage did not replicate."
+}

@@ -1,0 +1,152 @@
+{
+  "generated_at_utc": "2026-07-18T09:48:42.797930+00:00",
+  "dataset": "eICU-CRD v2.0",
+  "main_results_eligible": true,
+  "demo_or_synthetic_data_used": false,
+  "feature_matrix": {
+    "shape": [
+      107306,
+      41760
+    ],
+    "nnz": 3544842,
+    "density": 0.0007910653944643431,
+    "num_bins": 24,
+    "base_bin_minutes": 60,
+    "num_concepts": 1740,
+    "zero_feature_stays": 323
+  },
+  "observation_matrix": {
+    "shape": [
+      107306,
+      96
+    ],
+    "nnz": 1638560,
+    "num_bins": 24,
+    "modality_order_within_each_bin": [
+      "diagnosis",
+      "medication",
+      "lab",
+      "treatment"
+    ],
+    "zero_observation_stays": 0
+  },
+  "target_matrix": {
+    "shape": [
+      107306,
+      50
+    ],
+    "positive_pairs": 51119,
+    "micro_prevalence": 0.009527705813281643
+  },
+  "clients": 79,
+  "anonymous_patient_clusters": 84696,
+  "splits": {
+    "train": 75108,
+    "val": 10825,
+    "test": 21373
+  },
+  "modality_stats": {
+    "diagnosis": {
+      "source_file": "diagnosis.csv.gz",
+      "source_sha256": "1bc15709cfe9b376ef1da8b1ea47f61993e3d7dcc942f7c1eccbf162e5f2e0c8",
+      "window_rows": 725065,
+      "matched_events_before_collapse": 1119482,
+      "sparse_nonzeros_after_collapse": 951139,
+      "observation_bin_nonzeros": 163951,
+      "removed_input_target_diagnosis_events": 0,
+      "input_target_overlap_policy_applied": true,
+      "skipped_normal_lab_rows": 0
+    },
+    "medication": {
+      "source_file": "medication.csv.gz",
+      "source_sha256": "3d504b48375e264a47799ed6a5ea2328f7fc6f776395b5d6738693f69810ebc5",
+      "window_rows": 1611209,
+      "matched_events_before_collapse": 835525,
+      "sparse_nonzeros_after_collapse": 731075,
+      "observation_bin_nonzeros": 602353,
+      "removed_input_target_diagnosis_events": 0,
+      "input_target_overlap_policy_applied": false,
+      "skipped_normal_lab_rows": 0
+    },
+    "lab": {
+      "source_file": "lab.csv.gz",
+      "source_sha256": "91b55ed330015d31c424499cdae3b68e3b4cfe0c10e542548b5461520d93bc7a",
+      "window_rows": 5762008,
+      "matched_events_before_collapse": 1027179,
+      "sparse_nonzeros_after_collapse": 1009582,
+      "observation_bin_nonzeros": 727914,
+      "removed_input_target_diagnosis_events": 0,
+      "input_target_overlap_policy_applied": false,
+      "skipped_normal_lab_rows": 4687929
+    },
+    "treatment": {
+      "source_file": "treatment.csv.gz",
+      "source_sha256": "115ce152107aeab0f89f4c50c9b4b03a127a2d80618f70584d39e4b3fca4bd6b",
+      "window_rows": 1075980,
+      "matched_events_before_collapse": 960534,
+      "sparse_nonzeros_after_collapse": 853046,
+      "observation_bin_nonzeros": 144342,
+      "removed_input_target_diagnosis_events": 0,
+      "input_target_overlap_policy_applied": false,
+      "skipped_normal_lab_rows": 0
+    }
+  },
+  "removed_input_target_diagnosis_events": 0,
+  "concept_graph": {
+    "source_split": "train",
+    "train_stays": 75108,
+    "train_bin_rows": 1802592,
+    "active_concepts_in_train": 1736,
+    "min_cooccurrence": 25,
+    "top_k_neighbors": 12,
+    "undirected_edges_excluding_self": 14716,
+    "connected_components": 61,
+    "normalized_adjacency_nnz": 31172
+  },
+  "source_hashes": {
+    "split": "9e4c473b94879988d821d4cfc959d0fa710882ebbe508684800edbb00f2e6a04",
+    "targets": "cbfbe7a0fa626f364e099b49939b630b37b6606a6f3cac9a7ff06a34eec9b315",
+    "diagnosis_vocab.json": "fc51ee908b3d4d79220e986777a5a9e52e32df5d63852b15e6216dbdd7a8328c",
+    "edge_type_vocab.json": "9744389e730d1dc7f1eb18afee9c021ec3ef1cc77c274065fc9732c814117b33",
+    "lab_thresholds.json": "fe96ebd47f53961f8784eec194b2208586d7e116bb394fe7d85fb38210baac08",
+    "lab_vocab.json": "44a0c0580517e2cdc8651e6c2aed4efb058f74947e8fce9ab17bb74cf67fccc7",
+    "medication_vocab.json": "f5f618044fac981f3408b1cab2f88728acd492c1962fa2d0ed82871218449ed6",
+    "node_type_vocab.json": "892a85728bf60ab2e57d29ba1e9f54100a96411b9c83a1d43d32b765affb2f8f",
+    "treatment_vocab.json": "52f1564566497a826313b7c03fedca9fd1fac13fb1d6641fceff6f78061a1dba"
+  },
+  "environment": {
+    "python": "3.13.0",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0"
+  },
+  "privacy": {
+    "raw_rows_written": false,
+    "patient_or_stay_ids_written": false,
+    "training_cache_contains": [
+      "sparse features",
+      "labels",
+      "split codes",
+      "anonymous client codes",
+      "anonymous patient-cluster codes"
+    ]
+  },
+  "readiness_checks": {
+    "full_eicu_not_demo": true,
+    "107306_locked_stays": true,
+    "50_future_labels": true,
+    "79_hospital_clients": true,
+    "84696_anonymous_patient_clusters": true,
+    "feature_target_alignment": true,
+    "observation_target_alignment": true,
+    "finite_sparse_values": true,
+    "nonempty_feature_matrix": true,
+    "finite_observation_values": true,
+    "no_empty_observation_stays": true,
+    "train_only_concept_graph": true,
+    "nonempty_concept_graph": true,
+    "input_target_diagnosis_policy_applied": true,
+    "no_patient_or_stay_ids_saved": true
+  },
+  "readiness_status": "PASS"
+}

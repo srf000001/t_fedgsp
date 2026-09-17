@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "condition": "common_graphgru",
+      "seed": 1,
+      "config": "t_fedgsp/configs/common_graphgru_seed1.yaml",
+      "result_root": "t_fedgsp/results/federated_confirm_seed1_backbone",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_adamw_fedavg",
+      "seed": 1,
+      "config": "t_fedgsp/configs/graph_adamw_fedavg_seed1.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed1_graph",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_sgd_fedadam",
+      "seed": 1,
+      "config": "t_fedgsp/configs/residual_sgd_fedadam_seed1.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed1_fulljoint",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_adamw_fedavg",
+      "seed": 1,
+      "config": "t_fedgsp/configs/residual_adamw_fedavg_seed1.yaml",
+      "result_root": "t_fedgsp/results/review_control_fulljoint_adamwfedavg_seed1",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_sgd_fedadam",
+      "seed": 1,
+      "config": "t_fedgsp/configs/graph_sgd_fedadam_seed1.yaml",
+      "result_root": "t_fedgsp/results/review_control_graph_sgdfedadam_seed1",
+      "test_evaluated": false
+    },
+    {
+      "condition": "hybrid_sgd_fedadam",
+      "seed": 1,
+      "config": "t_fedgsp/configs/hybrid_sgd_fedadam_seed1.yaml",
+      "result_root": "t_fedgsp/results/review_control_hybrid_adapters_seed1",
+      "test_evaluated": false
+    },
+    {
+      "condition": "common_graphgru",
+      "seed": 2,
+      "config": "t_fedgsp/configs/common_graphgru_seed2.yaml",
+      "result_root": "t_fedgsp/results/federated_confirm_seed2_backbone",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_adamw_fedavg",
+      "seed": 2,
+      "config": "t_fedgsp/configs/graph_adamw_fedavg_seed2.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed2_graph",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_sgd_fedadam",
+      "seed": 2,
+      "config": "t_fedgsp/configs/residual_sgd_fedadam_seed2.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed2_fulljoint",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_adamw_fedavg",
+      "seed": 2,
+      "config": "t_fedgsp/configs/residual_adamw_fedavg_seed2.yaml",
+      "result_root": "t_fedgsp/results/review_control_fulljoint_adamwfedavg_seed2",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_sgd_fedadam",
+      "seed": 2,
+      "config": "t_fedgsp/configs/graph_sgd_fedadam_seed2.yaml",
+      "result_root": "t_fedgsp/results/review_control_graph_sgdfedadam_seed2",
+      "test_evaluated": false
+    },
+    {
+      "condition": "hybrid_sgd_fedadam",
+      "seed": 2,
+      "config": "t_fedgsp/configs/hybrid_sgd_fedadam_seed2.yaml",
+      "result_root": "t_fedgsp/results/review_control_hybrid_adapters_seed2",
+      "test_evaluated": false
+    },
+    {
+      "condition": "common_graphgru",
+      "seed": 3,
+      "config": "t_fedgsp/configs/common_graphgru_seed3.yaml",
+      "result_root": "t_fedgsp/results/federated_confirm_seed3_backbone",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_adamw_fedavg",
+      "seed": 3,
+      "config": "t_fedgsp/configs/graph_adamw_fedavg_seed3.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed3_graph",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_sgd_fedadam",
+      "seed": 3,
+      "config": "t_fedgsp/configs/residual_sgd_fedadam_seed3.yaml",
+      "result_root": "t_fedgsp/results/federated_strong_seed3_fulljoint",
+      "test_evaluated": false
+    },
+    {
+      "condition": "residual_adamw_fedavg",
+      "seed": 3,
+      "config": "t_fedgsp/configs/residual_adamw_fedavg_seed3.yaml",
+      "result_root": "t_fedgsp/results/review_control_fulljoint_adamwfedavg_seed3",
+      "test_evaluated": false
+    },
+    {
+      "condition": "graph_sgd_fedadam",
+      "seed": 3,
+      "config": "t_fedgsp/configs/graph_sgd_fedadam_seed3.yaml",
+      "result_root": "t_fedgsp/results/review_control_graph_sgdfedadam_seed3",
+      "test_evaluated": false
+    },
+    {
+      "condition": "hybrid_sgd_fedadam",
+      "seed": 3,
+      "config": "t_fedgsp/configs/hybrid_sgd_fedadam_seed3.yaml",
+      "result_root": "t_fedgsp/results/review_control_hybrid_adapters_seed3",
+      "test_evaluated": false
+    }
+  ]
+}

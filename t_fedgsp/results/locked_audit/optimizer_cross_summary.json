@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "scope": "post-lock reviewer-requested validation-only crossed optimizer control",
+  "test_evaluated": false,
+  "starting_checkpoint_matched_within_seed": true,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "rows": [
+    {
+      "seed": 1,
+      "conditions": {
+        "full_graph_adamw_fedavg": {
+          "best_round": 0,
+          "micro_auprc": 0.04404763166914428,
+          "macro_auprc": 0.042664385743385304,
+          "micro_auroc": 0.7848027538147427,
+          "ece_15": 0.06357687895079138,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        },
+        "residual_sgd_fedadam": {
+          "best_round": 19,
+          "micro_auprc": 0.045595734945400174,
+          "macro_auprc": 0.0433851693944425,
+          "micro_auroc": 0.7892775198866696,
+          "ece_15": 0.10093628280231416,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "full_graph_sgd_fedadam": {
+          "best_round": 30,
+          "micro_auprc": 0.049273459041128904,
+          "macro_auprc": 0.046597342926174755,
+          "micro_auroc": 0.8140280219169075,
+          "ece_15": 0.10953197180873557,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "residual_adamw_fedavg": {
+          "best_round": 0,
+          "micro_auprc": 0.04404763166914428,
+          "macro_auprc": 0.042664385743385304,
+          "micro_auroc": 0.7848027538147427,
+          "ece_15": 0.06357687895079138,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "conditions": {
+        "full_graph_adamw_fedavg": {
+          "best_round": 0,
+          "micro_auprc": 0.03966917338743766,
+          "macro_auprc": 0.038939902918340916,
+          "micro_auroc": 0.7770845248176996,
+          "ece_15": 0.07081516826819274,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        },
+        "residual_sgd_fedadam": {
+          "best_round": 24,
+          "micro_auprc": 0.042257108280057916,
+          "macro_auprc": 0.03908948882239457,
+          "micro_auroc": 0.7879246179634782,
+          "ece_15": 0.10954824605493622,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "full_graph_sgd_fedadam": {
+          "best_round": 30,
+          "micro_auprc": 0.04633372505024484,
+          "macro_auprc": 0.04346272097093041,
+          "micro_auroc": 0.808319106392385,
+          "ece_15": 0.10486898459356167,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "residual_adamw_fedavg": {
+          "best_round": 0,
+          "micro_auprc": 0.03966917338743766,
+          "macro_auprc": 0.038939902918340916,
+          "micro_auroc": 0.7770845248176996,
+          "ece_15": 0.07081516826819274,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "conditions": {
+        "full_graph_adamw_fedavg": {
+          "best_round": 8,
+          "micro_auprc": 0.04126955128041409,
+          "macro_auprc": 0.03953114971858103,
+          "micro_auroc": 0.7815555787686548,
+          "ece_15": 0.07262392289666464,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        },
+        "residual_sgd_fedadam": {
+          "best_round": 21,
+          "micro_auprc": 0.0429443636444892,
+          "macro_auprc": 0.04073015317428668,
+          "micro_auroc": 0.7889020570878019,
+          "ece_15": 0.10626804789316834,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "full_graph_sgd_fedadam": {
+          "best_round": 30,
+          "micro_auprc": 0.046167729563581526,
+          "macro_auprc": 0.043578847685176676,
+          "micro_auroc": 0.8072164208313188,
+          "ece_15": 0.10834450219490821,
+          "communication_bytes": 348200400,
+          "trainable_parameters": 18365,
+          "local_optimizer": "sgd",
+          "server_optimizer": "fedadam"
+        },
+        "residual_adamw_fedavg": {
+          "best_round": 0,
+          "micro_auprc": 0.04123875973480806,
+          "macro_auprc": 0.04042934205847999,
+          "micro_auroc": 0.7805944541667892,
+          "ece_15": 0.07459751752753153,
+          "communication_bytes": 123638160,
+          "trainable_parameters": 6521,
+          "local_optimizer": "adamw",
+          "server_optimizer": "fedavg"
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "full_graph_adamw_fedavg": {
+      "mean_micro_auprc": 0.041662118778998676,
+      "sample_sd_micro_auprc": 0.0022154697384234425,
+      "mean_best_round": 2.6666666666666665,
+      "branch_communication_bytes": 348200400,
+      "trainable_parameters": 18365
+    },
+    "residual_sgd_fedadam": {
+      "mean_micro_auprc": 0.04359906895664909,
+      "sample_sd_micro_auprc": 0.0017629765418068907,
+      "mean_best_round": 21.333333333333332,
+      "branch_communication_bytes": 123638160,
+      "trainable_parameters": 6521
+    },
+    "full_graph_sgd_fedadam": {
+      "mean_micro_auprc": 0.04725830455165176,
+      "sample_sd_micro_auprc": 0.0017471474859733717,
+      "mean_best_round": 30.0,
+      "branch_communication_bytes": 348200400,
+      "trainable_parameters": 18365
+    },
+    "residual_adamw_fedavg": {
+      "mean_micro_auprc": 0.04165185493046333,
+      "sample_sd_micro_auprc": 0.0022182673332279902,
+      "mean_best_round": 0.0,
+      "branch_communication_bytes": 123638160,
+      "trainable_parameters": 6521
+    }
+  },
+  "full_graph_sgdfedadam_minus_residual_sgdfedadam": {
+    "per_seed": [
+      0.0036777240957287308,
+      0.004076616770186926,
+      0.003223365919092329
+    ],
+    "mean": 0.003659235595002662,
+    "sample_sd": 0.00042692578068996616,
+    "all_positive": true
+  },
+  "interpretation": "The preregistered locked-test contrast compares complete training recipes. It cannot identify the residual parameterization as the cause because the optimizer/server rule changes the ordering on validation."
+}

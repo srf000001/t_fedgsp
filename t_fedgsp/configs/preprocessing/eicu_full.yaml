@@ -1,0 +1,49 @@
+dataset:
+  name: eicu-crd
+  version: "2.0"
+  mode: full
+  raw_dir_env: EICU_RAW_DIR
+  allow_demo_main_results: false
+
+columns:
+  patient_id_candidates: ["patientUnitStayID", "patientunitstayid"]
+  unique_patient_id_candidates: ["uniquepid", "uniquePid", "uniquePID"]
+  hospital_id_candidates: ["hospitalID", "hospitalid"]
+  diagnosis_offset_candidates: ["diagnosisOffset", "diagnosisoffset"]
+  diagnosis_code_candidates: ["ICD9Code", "icd9code"]
+  active_upon_discharge_candidates: ["activeUponDischarge", "activeupondischarge"]
+
+task:
+  prediction_unit: patient_unit_stay
+  input_window_minutes: 1440
+  target: future_icu_diagnosis_prediction
+  num_labels: 50
+  target_rule: first_diagnosis_offset_gt_cutoff
+  remove_target_labels_from_input_nodes: true
+
+federated:
+  client_column: hospitalID
+  min_eligible_stays_per_client: 500
+  fallback_min_eligible_stays_per_client: 300
+  split_key: uniquepid
+  split: [0.7, 0.1, 0.2]
+  seeds: [1, 2, 3]
+
+external_kg:
+  name: PrimeKG
+  enabled: true
+  path_env: PRIMEKG_PATH
+  downgrade_if_diagnosis_coverage_below: 0.20
+  downgrade_if_medication_coverage_below: 0.20
+
+outputs:
+  results_dir: results_full
+  schema_report: results_full/schema_report.json
+  cohort_stats: results_full/cohort_stats.csv
+  client_stats: results_full/client_stats.csv
+  label_stats: results_full/label_stats.csv
+  leakage_audit: results_full/leakage_audit.csv
+  graph_stats: results_full/graph_stats.csv
+  primekg_coverage: results_full/primekg_coverage.csv
+  readiness_report: results_full/full_readiness_report.md
+

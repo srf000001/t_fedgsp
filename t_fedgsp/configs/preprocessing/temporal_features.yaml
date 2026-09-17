@@ -1,0 +1,24 @@
+dataset:
+  name: eICU-CRD v2.0
+  require_full_eicu: true
+  raw_dir_env: EICU_RAW_DIR
+  split_path: external_data/derived/splits/split_assignments.csv
+  target_path: external_data/derived/labels/targets_multihot.csv
+  vocab_root: external_data/derived/vocab
+  input_window_minutes: 1440
+  base_bin_minutes: 60
+  chunk_size: 250000
+
+concept_graph:
+  source_split: train
+  min_cooccurrence: 25
+  top_k_neighbors: 12
+  add_self_loops: true
+
+outputs:
+  root: t_fedgsp/data/temporal_v1
+
+privacy:
+  write_raw_rows: false
+  write_patient_or_stay_ids: false
+  aggregate_only_reports: true
