@@ -92,9 +92,3 @@ The archived one-time test report is under
 `t_fedgsp/results/locked_audit/`. Re-executing locked inference requires new
 locally trained checkpoints and credentialed eICU access; the repository does
 not redistribute either.
-
-## Anonymous-review status
-
-See `ANONYMITY_AUDIT.md` for the packaging checks. Do not add a personal Git
-configuration, author-bearing citation file, institutional badge, private
-remote URL, or deanonymizing issue/commit history before the review period ends.
